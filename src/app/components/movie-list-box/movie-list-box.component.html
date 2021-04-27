@@ -1,0 +1,10 @@
+<div *ngIf="searchList">
+  <h1 id="myList">{{title}} - {{searchList.totalResults}}</h1>
+  <div class="box">
+    <a href="" *ngFor="let movie of searchList.Search">
+      <img src="{{movie.Poster}}" alt="{{movie.Title}}" width="280" height="300">
+      <br/>
+      {{movie.Title}}    
+    </a>             
+  </div>
+</div>
